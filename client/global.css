@@ -1,5 +1,6 @@
 /** @import must precede all other statements */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -103,8 +104,11 @@
     @apply border-border;
   }
 
+  html { scroll-behavior: smooth; }
+
   body {
     @apply bg-background text-foreground;
+    font-family: "Manrope", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
@@ -116,5 +120,14 @@
   code {
     overflow-x: auto;
     white-space: pre;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 dark:bg-white/10 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+  .glass-strong {
+    @apply bg-white/15 dark:bg-white/15 backdrop-blur-xl border border-white/25 shadow-xl;
   }
 }
