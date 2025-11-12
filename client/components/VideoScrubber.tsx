@@ -40,19 +40,29 @@ export default function VideoScrubber({ src, poster, steps }: Props) {
                 decoding="async"
                 {...{ fetchpriority: "high" }}
               />
-              <p className="uppercase tracking-[0.2em] text-xs text-white/80">Welcome to</p>
+              <p className="uppercase tracking-[0.2em] text-xs text-white/80">
+                Welcome to
+              </p>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mt-2">
               SNEF INDIA
             </h1>
             <p className="mt-4 text-white/80 max-w-2xl">
-              Premier training hub in Kochi for shipping, logistics and maritime careers. Learn with modern labs, seasoned faculty, and globally aligned standards.
+              Premier training hub in Kochi for shipping, logistics and maritime
+              careers. Learn with modern labs, seasoned faculty, and globally
+              aligned standards.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link to="/courses" className="rounded-md bg-primary px-5 py-2.5 text-primary-foreground font-semibold shadow hover:bg-primary/90">
+              <Link
+                to="/courses"
+                className="rounded-md bg-primary px-5 py-2.5 text-primary-foreground font-semibold shadow hover:bg-primary/90"
+              >
                 Explore Courses
               </Link>
-              <a href="#contact" className="rounded-md border border-white/30 px-5 py-2.5 font-semibold hover:bg-white/10">
+              <a
+                href="#contact"
+                className="rounded-md border border-white/30 px-5 py-2.5 font-semibold hover:bg-white/10"
+              >
                 Contact Us
               </a>
             </div>
@@ -60,7 +70,10 @@ export default function VideoScrubber({ src, poster, steps }: Props) {
 
           <ol className="grid gap-8 md:grid-cols-3">
             {steps.map((s, i) => (
-              <li key={i} className="rounded-lg bg-white/5 backdrop-blur border border-white/10 p-5">
+              <li
+                key={i}
+                className="rounded-lg bg-white/5 backdrop-blur border border-white/10 p-5"
+              >
                 <h3 className="font-semibold text-lg">{s.title}</h3>
                 <p className="mt-2 text-sm text-white/80">{s.body}</p>
               </li>

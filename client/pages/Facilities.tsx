@@ -1,16 +1,30 @@
 export default function Facilities() {
-  const hero = "https://cdn.builder.io/o/assets%2Fe04c116b0cec4cf7a475618352e3872a%2Ff4523c3692a54cfdb851793dd53f5c24?alt=media&token=d6d80b62-8ae6-4e96-b659-3fc1f8ec1858&apiKey=e04c116b0cec4cf7a475618352e3872a";
+  const hero =
+    "https://cdn.builder.io/o/assets%2Fe04c116b0cec4cf7a475618352e3872a%2Ff4523c3692a54cfdb851793dd53f5c24?alt=media&token=d6d80b62-8ae6-4e96-b659-3fc1f8ec1858&apiKey=e04c116b0cec4cf7a475618352e3872a";
 
   return (
     <main>
       <section className="relative h-[50vh] w-full overflow-hidden">
-        <video className="absolute inset-0 h-full w-full object-cover" src={hero} autoPlay muted loop playsInline preload="metadata" />
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src={hero}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
         <div className="relative z-10 flex h-full items-end">
           <div className="container mx-auto pb-10">
             <div className="glass-strong rounded-2xl p-6 max-w-2xl text-white">
-              <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">Facilities</h1>
-              <p className="mt-3 text-white/80">Outstanding faculty, modern labs, and hands‑on training infrastructure.</p>
+              <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Facilities
+              </h1>
+              <p className="mt-3 text-white/80">
+                Outstanding faculty, modern labs, and hands‑on training
+                infrastructure.
+              </p>
             </div>
           </div>
         </div>
@@ -27,7 +41,11 @@ export default function Facilities() {
           <li>• Laboratory Facility for hands‑on training</li>
         </ul>
         <div className="glass rounded-2xl overflow-hidden">
-          <img alt="Port aerial" src="https://cdn.builder.io/api/v1/image/assets%2Fe04c116b0cec4cf7a475618352e3872a%2F9709e5cd3de645b8bd99aa0e5899bf80?format=webp&width=800" className="h-full w-full object-cover" />
+          <img
+            alt="Port aerial"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fe04c116b0cec4cf7a475618352e3872a%2F9709e5cd3de645b8bd99aa0e5899bf80?format=webp&width=800"
+            className="h-full w-full object-cover"
+          />
         </div>
       </section>
 
@@ -35,7 +53,14 @@ export default function Facilities() {
         <div className="grid gap-6 md:grid-cols-3">
           {gallery.map((src, i) => (
             <div key={i} className="glass rounded-xl overflow-hidden">
-              <video className="w-full h-48 object-cover" src={src} controls playsInline muted loop />
+              <video
+                className="w-full h-48 object-cover"
+                src={src}
+                controls
+                playsInline
+                muted
+                loop
+              />
             </div>
           ))}
         </div>

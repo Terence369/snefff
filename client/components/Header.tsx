@@ -16,7 +16,11 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src="https://cdn.builder.io/api/v1/image/assets%2Fe04c116b0cec4cf7a475618352e3872a%2F5d8f6d4f482e4162b2ed08f417553aa6?format=webp&width=96" alt="SNEF INDIA" className="h-8 w-8 rounded bg-white" />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fe04c116b0cec4cf7a475618352e3872a%2F5d8f6d4f482e4162b2ed08f417553aa6?format=webp&width=96"
+            alt="SNEF INDIA"
+            className="h-8 w-8 rounded bg-white"
+          />
           <span className="font-extrabold tracking-wide">SNEF INDIA</span>
         </Link>
 
@@ -25,7 +29,13 @@ export default function Header() {
           aria-label="Toggle navigation"
           onClick={() => setOpen((s) => !s)}
         >
-          <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg
+            className="h-6 w-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
             <path d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
