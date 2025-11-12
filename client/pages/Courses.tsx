@@ -58,7 +58,7 @@ const list = [
   "Electrical & Electronic Technicians Bridging Course",
 ];
 
-const gallery = [
+const images = [
   { url: "https://images.pexels.com/photos/3192669/pexels-photo-3192669.jpeg", alt: "Offshore oil platform under blue sky" },
   { url: "https://images.pexels.com/photos/7286074/pexels-photo-7286074.jpeg", alt: "Helicopter training over ocean" },
   { url: "https://images.pexels.com/photos/29979565/pexels-photo-29979565.jpeg", alt: "Lifeboat safety drill at sea" },
@@ -69,3 +69,9 @@ const gallery = [
   { url: "https://images.pexels.com/photos/28438355/pexels-photo-28438355.jpeg", alt: "Cargo handling containers at port" },
   { url: "https://images.pexels.com/photos/9553343/pexels-photo-9553343.jpeg", alt: "Engine room maintenance" },
 ];
+
+const courses = list.map((title, i) => ({
+  title,
+  img: images[i % images.length].url,
+  alt: images[i % images.length].alt || title,
+}));
