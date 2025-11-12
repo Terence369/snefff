@@ -17,24 +17,21 @@ export default function Courses() {
       </section>
 
       <section className="container mx-auto py-12">
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {list.map((c) => (
-            <div key={c} className="glass rounded-2xl p-6">
-              <h3 className="font-semibold">{c}</h3>
-              <p className="mt-2 text-sm text-foreground/80">Concise overview of the course outcomes, key competencies, and duration with hands‑on practice.</p>
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {courses.map((c) => (
+            <div key={c.title} className="glass rounded-2xl overflow-hidden">
+              <img
+                src={c.img}
+                alt={c.alt}
+                className="h-40 w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="p-6">
+                <h3 className="font-semibold">{c.title}</h3>
+                <p className="mt-2 text-sm text-foreground/80">Concise overview of the course outcomes, key competencies, and duration with hands‑on practice.</p>
+              </div>
             </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="container mx-auto pb-16">
-        <h2 className="text-2xl md:text-3xl font-extrabold">Training Gallery</h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {gallery.map((g, i) => (
-            <figure key={i} className="glass rounded-2xl overflow-hidden">
-              <img src={g.url} alt={g.alt} className="h-56 w-full object-cover" loading="lazy" decoding="async" />
-              <figcaption className="p-3 text-sm text-foreground/80">{g.alt}</figcaption>
-            </figure>
           ))}
         </div>
       </section>
