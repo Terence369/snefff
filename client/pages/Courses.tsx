@@ -60,3 +60,15 @@ const list = [
   "Shipping New Entry to Mechanical & Refrigeration Technicians",
   "Electrical & Electronic Technicians Bridging Course",
 ];
+
+const gallery = [
+  { url: "https://images.pexels.com/photos/3192669/pexels-photo-3192669.jpeg", alt: "Offshore oil platform under blue sky" },
+  { url: "https://images.pexels.com/photos/7286074/pexels-photo-7286074.jpeg", alt: "Helicopter training over ocean" },
+  { url: "https://images.pexels.com/photos/29979565/pexels-photo-29979565.jpeg", alt: "Lifeboat safety drill at sea" },
+  { url: "https://images.pexels.com/photos/31642540/pexels-photo-31642540.jpeg", alt: "Port crane operations" },
+  { url: "https://images.pexels.com/photos/3846012/pexels-photo-3846012.jpeg", alt: "Industrial workshop and mechanics" },
+  { url: "https://images.pexels.com/photos/8951041/pexels-photo-8951041.jpeg", alt: "Chef slicing salmon – HACCP hygiene" },
+  { url: "https://images.pexels.com/photos/14606488/pexels-photo-14606488.jpeg", alt: "Navigation bridge console" },
+  { url: "https://images.pexels.com/photos/28438355/pexels-photo-28438355.jpeg", alt: "Cargo handling containers at port" },
+  { url: "https://images.pexels.com/photos/9553343/pexels-photo-9553343.jpeg", alt: "Engine room maintenance" },
+];
