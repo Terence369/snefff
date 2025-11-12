@@ -26,6 +26,18 @@ export default function Courses() {
           ))}
         </div>
       </section>
+
+      <section className="container mx-auto pb-16">
+        <h2 className="text-2xl md:text-3xl font-extrabold">Training Gallery</h2>
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {gallery.map((g, i) => (
+            <figure key={i} className="glass rounded-2xl overflow-hidden">
+              <img src={g.url} alt={g.alt} className="h-56 w-full object-cover" loading="lazy" decoding="async" />
+              <figcaption className="p-3 text-sm text-foreground/80">{g.alt}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
