@@ -24,15 +24,6 @@ export default function ValueAdded() {
         <Card title="Management" desc="Leadership, audit readiness, incident investigation, and voyage planning." />
       </section>
 
-      <section className="container mx-auto pb-16">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {gallery.map((src, i) => (
-            <div key={i} className="glass rounded-xl overflow-hidden">
-              <video className="w-full h-48 object-cover" src={src} controls playsInline muted loop />
-            </div>
-          ))}
-        </div>
-      </section>
     </main>
   );
 }
