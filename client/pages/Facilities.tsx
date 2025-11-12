@@ -4,7 +4,7 @@ export default function Facilities() {
   return (
     <main>
       <section className="relative h-[50vh] w-full overflow-hidden">
-        <video className="absolute inset-0 h-full w-full object-cover" src={hero} autoPlay muted loop playsInline />
+        <video className="absolute inset-0 h-full w-full object-cover" src={hero} autoPlay muted loop playsInline preload="metadata" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
         <div className="relative z-10 flex h-full items-end">
           <div className="container mx-auto pb-10">
