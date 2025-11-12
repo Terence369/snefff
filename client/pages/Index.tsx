@@ -31,7 +31,7 @@ export default function Index() {
       <section className="container mx-auto py-20">
         <div className="grid gap-12 md:grid-cols-2 md:items-start">
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">Cochin Maritime Academy Facilities</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">SNEF INDIA Facilities</h2>
             <p className="mt-3 text-muted-foreground max-w-prose">
               Our offerings are wide‑ranging and all‑inclusive. We provide optimal solutions for residential, commercial, and industrial verticals.
             </p>
