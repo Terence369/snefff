@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="container mx-auto grid gap-8 py-10 md:grid-cols-4">
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded bg-primary/90" />
-            <span className="font-extrabold">Cochin Maritime Academy</span>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2Fe04c116b0cec4cf7a475618352e3872a%2F5d8f6d4f482e4162b2ed08f417553aa6?format=webp&width=96" alt="SNEF INDIA" className="h-8 w-8 rounded bg-white" />
+            <span className="font-extrabold">SNEF INDIA</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-sm">
             Located in Kochi, India, we offer comprehensive maritime education with modern facilities and experienced faculty.
