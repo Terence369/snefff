@@ -37,8 +37,8 @@ export default function VideoScrubber({ src, poster, steps }: Props) {
                 alt="SNEF INDIA logo"
                 className="h-12 w-12 rounded-full bg-white/90 p-1"
                 loading="eager"
-                fetchPriority="high"
                 decoding="async"
+                {...{ fetchpriority: "high" }}
               />
               <p className="uppercase tracking-[0.2em] text-xs text-white/80">Welcome to</p>
             </div>
